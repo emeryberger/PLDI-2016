@@ -301,7 +301,7 @@
 
 \DeclareOption{clearpagebib}{\@setflag \@clearpagebib = \@true}
 
-\DeclareOption{pldi}{\PassOptionsToClass{9pt}{article} %
+\DeclareOption{pldi}{\PassOptionsToClass{10pt}{article} %
                      \@setflag \@ninepoint = \@false
                      \@setflag \@tenpoint = \@true
                      \@setflag \@explicitsize = \@true
@@ -312,7 +312,7 @@
                      \@setflag \@clearpagebib = \@true
 		     }
 
-\DeclareOption{pldinumbers}{\PassOptionsToClass{9pt}{article} %
+\DeclareOption{pldinumbers}{\PassOptionsToClass{10pt}{article} %
                      \@setflag \@ninepoint = \@false
                      \@setflag \@tenpoint = \@true
                      \@setflag \@explicitsize = \@true
@@ -323,7 +323,7 @@
                      \@setflag \@clearpagebib = \@true
 		     }
 
-\DeclareOption{pldiauthoryear}{\PassOptionsToClass{9pt}{article} %
+\DeclareOption{pldiauthoryear}{\PassOptionsToClass{10pt}{article} %
                      \@setflag \@ninepoint = \@false
                      \@setflag \@tenpoint = \@true
                      \@setflag \@explicitsize = \@true
