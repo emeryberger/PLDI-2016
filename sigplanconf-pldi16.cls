@@ -301,7 +301,29 @@
 
 \DeclareOption{clearpagebib}{\@setflag \@clearpagebib = \@true}
 
-\DeclareOption{pldi}{\PassOptionsToClass{10pt}{article} %
+\DeclareOption{pldi}{\PassOptionsToClass{9pt}{article} %
+                     \@setflag \@ninepoint = \@false
+                     \@setflag \@tenpoint = \@true
+                     \@setflag \@explicitsize = \@true
+		     \@setflag \@authoryear = \@false
+                     \@setflag \@squareay = \@true
+                     \@setflag \@blind = \@true
+                     \@setflag \@preprint = \@true
+                     \@setflag \@clearpagebib = \@true
+		     }
+
+\DeclareOption{pldinumbers}{\PassOptionsToClass{9pt}{article} %
+                     \@setflag \@ninepoint = \@false
+                     \@setflag \@tenpoint = \@true
+                     \@setflag \@explicitsize = \@true
+		     \@setflag \@authoryear = \@false
+                     \@setflag \@squareay = \@true
+                     \@setflag \@blind = \@true
+                     \@setflag \@preprint = \@true
+                     \@setflag \@clearpagebib = \@true
+		     }
+
+\DeclareOption{pldiauthoryear}{\PassOptionsToClass{9pt}{article} %
                      \@setflag \@ninepoint = \@false
                      \@setflag \@tenpoint = \@true
                      \@setflag \@explicitsize = \@true
