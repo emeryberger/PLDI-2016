@@ -312,6 +312,17 @@
                      \@setflag \@clearpagebib = \@true
 		     }
 
+\DeclareOption{pldi-cameraready}{\PassOptionsToClass{10pt}{article} %
+                     \@setflag \@ninepoint = \@false
+                     \@setflag \@tenpoint = \@true
+                     \@setflag \@explicitsize = \@true
+		     \@setflag \@authoryear = \@true
+                     \@setflag \@squareay = \@true
+                     \@setflag \@blind = \@false
+                     \@setflag \@preprint = \@false
+                     \@setflag \@clearpagebib = \@true
+		     }
+
 \DeclareOption{pldinumbers}{\PassOptionsToClass{10pt}{article} %
                      \@setflag \@ninepoint = \@false
                      \@setflag \@tenpoint = \@true
