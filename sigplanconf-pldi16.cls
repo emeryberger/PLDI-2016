@@ -36,7 +36,7 @@
 
 
 \NeedsTeXFormat{LaTeX2e}[1995/12/01]
-\ProvidesClass{sigplanconf-pldi15}[2014/08/18 v3.0x ACM SIGPLAN Proceedings]
+\ProvidesClass{sigplanconf-pldi16}[2014/08/18 v3.0x ACM SIGPLAN Proceedings]
 
 % The following few pages contain LaTeX programming extensions adapted
 % from the ZzTeX macro package.
