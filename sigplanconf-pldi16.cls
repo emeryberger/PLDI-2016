@@ -1,5 +1,5 @@
 %
-% IMPORTANT:  Please only use this class file for submissions to PLDI'15
+% IMPORTANT:  Please only use this class file for submissions to PLDI'16
 %
 %
 % In the future, please use the 3.X official releases of this class
