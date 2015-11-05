@@ -3,7 +3,7 @@ Documents related to PLDI 2016.
 The document formatting instructions given here echo those prescribed
 by the August 2015 version of the [Practices of the PLDI](http://www.sigplan.org/sites/default/files/PracticesofPLDI.201508.pdf) document.
 
-You should use the ``sigplanconf-pldi16.cls'' class file. The template (``pldi16-template.tex``) provides an example of usage, along with information for authors.
+You should use the ``sigplanconf-pldi16.cls`` class file. The template (``pldi16-template.tex``) provides an example of usage, along with information for authors.
 
 > Papers should follow the standard two-column ACM proceedings style in 10-point font and be at most 11 pages, exclusive of the bibliography. The bibliography is excluded from the page count to encourage good citation practices and discourage illegible bibliographies. Citations can be either in numeric style or author-year style. Numeric citations always stand as a parenthetical note (e.g., “[42]”), while author-year citations may stand either as a noun phrase (e.g., “Church (1935)”), or as a parenthetical note (e.g., “(Church, 1935)”).
 
