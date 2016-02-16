@@ -53,8 +53,6 @@ with open('pldi16-pcconflicts.csv','rb') as csvfile:
     for row in reader:
         key = row['PC email']
         value = list(set(allAuthors[row['paper']]))
-        # print row['paper'], key, value
-        # print key, value
         if (key in conflicts):
             conflicts[key].append(value)
         else:
@@ -91,11 +89,9 @@ if (True):
             msg += recipient
         msg += "\n\nHi,\n\n"
         msg += "This mail contains a list of all papers for which you have been marked\nas a conflict. The paper numbers are not given, and they are shuffled.\nPlease check each author list to verify that at least one of the authors for\neach paper looks like a legitimate conflict. If not, please send me\na mail.\n\n"
+        # Not actually sampling from random authors right now.
         # r = random.sample(authorsList,5)
-        c = conflicts[recipient] # list(conflicts[i])
-        # l = list(set(c+r))
-        # l = list(set(c))
-        # msg += i + ":\n\n"
+        c = conflicts[recipient]
         ind = 1
         for l in c:
             msg += "Paper " + str(ind) + " : "
