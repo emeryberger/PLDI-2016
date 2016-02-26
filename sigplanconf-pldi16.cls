@@ -316,7 +316,7 @@
                      \@setflag \@ninepoint = \@false
                      \@setflag \@tenpoint = \@true
                      \@setflag \@explicitsize = \@true
-		     \@setflag \@authoryear = \@true
+		     \@setflag \@authoryear = \@false
                      \@setflag \@squareay = \@true
                      \@setflag \@blind = \@false
                      \@setflag \@preprint = \@false
