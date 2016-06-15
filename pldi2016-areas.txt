@@ -1,0 +1,86 @@
+approximate computing
+automata theory
+automatic parallelization
+availability
+big code
+big data
+bug detection
+cloud computing
+code generation
+compiler optimization
+concurrency
+correctness
+crowdsourcing
+databases
+debugging
+declarative languages
+deep learning
+determinism
+distributed systems
+domain-specific languages
+dynamic analysis
+dynamic compilation
+dynamic languages
+education
+embedded systems
+emerging topics
+energy
+error correction and detection
+FPGAs
+functional programming
+GPUs
+graph analytics
+graphics
+hardware
+heterogeneous computing
+human-computer interaction
+interaction with architecture and OS
+language design and implementation
+logic programming
+machine learning
+malware
+memory management
+memory models
+microarchitecture
+mobile
+new programming languages
+non-volatile memory
+novel programming models
+object-oriented programming
+parallelism
+parsing
+performance analysis
+power
+privacy
+probabilistic programming
+profiling
+program logics
+program repair
+real-time systems
+reconfigurable computing
+reliability
+runtime monitoring
+runtime systems
+scientific computing
+scripting languages
+security
+semantics
+sensor networks
+software engineering
+software-defined networking
+specification
+spreadsheets
+static analysis
+statistical methods
+stream processing
+synchronous languages
+synthesis
+testing
+theorem provers
+tools
+type systems
+vectorization
+verification
+virtual machines
+web applications
+web/browser technology
