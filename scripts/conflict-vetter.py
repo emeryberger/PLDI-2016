@@ -29,14 +29,14 @@ with open('pldi16-pcinfo.csv','rb') as csvfile:
 
 
 # Now we build a list of authors for each paper.
-# allAuthors[paper number] = list of authors (by e-mail)
+# allAuthors[paper number] = list of authors (by name and e-mail)
 
 allAuthors = {}
 with open('pldi16-authors.csv','rb') as csvfile:
     reader = csv.DictReader(csvfile,delimiter=',')
     for row in reader:
         key = row['paper']
-        value = row['email']
+        value = row['first'] + " " + row['last'] + " <" + row['email'] + ">"
         if key in allAuthors:
             allAuthors[key].append(value)
         else:
