@@ -18,3 +18,19 @@ conflict-pcprefs.py:
   - used to generate file for David Walker's scripts, which were not used
 
 
+-----
+
+### How to extract relevant CSV files from HotCRP
+
+* CSV of PC members: Go to `confyear.hotcrp.com/users`, select "Program Committee" and
+  click Go, scroll to bottom, select all XXX, Download, Names and
+  emails, Go
+
+* Authors of papers: Do a search for the relevant papers, scroll to
+  bottom, select all XXX, Download, Paper Information > Authors, Go
+
+* PC conflicts for papers: Do a search for the relevant papers, scroll to
+  bottom, select all XXX, Download, Paper Information > PC Conflicts,
+  Go
+
+

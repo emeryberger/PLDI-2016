@@ -51,7 +51,7 @@ conflicts = {}
 with open('pldi16-pcconflicts.csv','rb') as csvfile:
     reader = csv.DictReader(csvfile,delimiter=',')
     for row in reader:
-        key = row['PC email']
+        key = row['email']
         value = list(set(allAuthors[row['paper']]))
         if (key in conflicts):
             conflicts[key].append(value)
@@ -69,14 +69,16 @@ authorsList = []
 with open('pldi16-authors.csv','rb') as csvfile:
     reader = csv.DictReader(csvfile,delimiter=',')
     for row in reader:
-        key = row['name']
+        key = row['first'] + " " + row['last']
         value = row['email']
         authorsList.append(value)
 
 
-server = smtplib.SMTP('smtp.gmail.com', 587)
-server.starttls()
-server.login(sender, password)
+if reallySendMail:
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(sender, password)
+
 
 if (True):
     s = sorted(conflicts.keys())
@@ -113,4 +115,5 @@ if (True):
             print "NOT REALLY SENDING IT."
             print msg
 
-server.quit()
+if reallySendMail:
+    server.quit()
