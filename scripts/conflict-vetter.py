@@ -13,6 +13,7 @@ reallySendMail = False
 senderFirstName = "Me"
 senderName = "Your Name <your.mail.goes.here@gmail.com>"
 sender = "your.mail.goes.here@gmail.com"
+# Assuming you use 2FA, you can generate an App Password for use here at https://security.google.com/settings/security/apppasswords
 password = "your-onetime-password-goes-here"
 
 # A map of e-mail to names
