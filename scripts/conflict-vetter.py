@@ -30,6 +30,11 @@ with open('pldi16-pcinfo.csv','rb') as csvfile:
 
 # Now we build a list of authors for each paper.
 # allAuthors[paper number] = list of authors (by e-mail)
+# NOTE: Keeping lists of authors by name is harder, as some
+# paper authors do not have a HotCRP account and hence won't
+# be present in an easily-exported name-to-email mapping.  Eventually
+# we could construct the name-to-email mapping from the authors
+# list to work around this problem
 
 allAuthors = {}
 with open('pldi16-authors.csv','rb') as csvfile:
