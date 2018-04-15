@@ -13,6 +13,7 @@ reallySendMail = False
 senderFirstName = "Me"
 senderName = "Your Name <your.mail.goes.here@gmail.com>"
 sender = "your.mail.goes.here@gmail.com"
+# Assuming you use 2FA, you can generate an App Password for use here at https://security.google.com/settings/security/apppasswords
 password = "your-onetime-password-goes-here"
 
 # A map of e-mail to names
@@ -28,14 +29,14 @@ with open('pldi16-pcinfo.csv','rb') as csvfile:
 
 
 # Now we build a list of authors for each paper.
-# allAuthors[paper number] = list of authors (by e-mail)
+# allAuthors[paper number] = list of authors (by name and e-mail)
 
 allAuthors = {}
 with open('pldi16-authors.csv','rb') as csvfile:
     reader = csv.DictReader(csvfile,delimiter=',')
     for row in reader:
         key = row['paper']
-        value = row['email']
+        value = row['first'] + " " + row['last'] + " <" + row['email'] + ">"
         if key in allAuthors:
             allAuthors[key].append(value)
         else:
@@ -51,7 +52,7 @@ conflicts = {}
 with open('pldi16-pcconflicts.csv','rb') as csvfile:
     reader = csv.DictReader(csvfile,delimiter=',')
     for row in reader:
-        key = row['PC email']
+        key = row['email']
         value = list(set(allAuthors[row['paper']]))
         if (key in conflicts):
             conflicts[key].append(value)
@@ -69,14 +70,16 @@ authorsList = []
 with open('pldi16-authors.csv','rb') as csvfile:
     reader = csv.DictReader(csvfile,delimiter=',')
     for row in reader:
-        key = row['name']
+        key = row['first'] + " " + row['last']
         value = row['email']
         authorsList.append(value)
 
 
-server = smtplib.SMTP('smtp.gmail.com', 587)
-server.starttls()
-server.login(sender, password)
+if reallySendMail:
+    server = smtplib.SMTP('smtp.gmail.com', 587)
+    server.starttls()
+    server.login(sender, password)
+
 
 if (True):
     s = sorted(conflicts.keys())
@@ -113,4 +116,5 @@ if (True):
             print "NOT REALLY SENDING IT."
             print msg
 
-server.quit()
+if reallySendMail:
+    server.quit()
